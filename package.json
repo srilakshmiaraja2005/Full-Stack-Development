@@ -1,0 +1,15 @@
+{
+  "name": "fsd_lab",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "abc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "create-react-app": "^5.1.0"
+  }
+}
