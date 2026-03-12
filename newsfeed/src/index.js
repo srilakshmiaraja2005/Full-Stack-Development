@@ -1,17 +1,14 @@
- import React from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import newsfeed from "./components/newsfeed";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import First from './components/First';
-import Second from './components/Second';
-import Increment from './components/increment';
+import NewsDataFeed from './components/newsfeed';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <First/>
-    <Increment/>
+    <NewsDataFeed/>
   </React.StrictMode>
 );
 

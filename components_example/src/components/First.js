@@ -6,7 +6,7 @@ const First=()=>{
     let name="sri"
     return(
         <div>
-        <h1>welcome {name} to my {college}</h1>
+        <h1>hi {name} welcome to {college}</h1>
         <Second/>
         </div>
     );
