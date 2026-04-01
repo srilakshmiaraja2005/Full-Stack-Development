@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do list</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>to do list</h1>
+    <input type="text" name="" id="textboxinput" placeholder="enter the task">
+    <button onclick="addtaskContent()">add task</button>
+    <ul id="unordered-list"></ul>
+    <script>
+        function addtaskContent(){
+            let input=document.getElementById("textboxinput")
+            let taskcontent=input.value
+            let ul=document.getElementById("unordered-list")
+            let li=document.createElement("li")
+             li.textContent=taskcontent
+            let deletebtn=document.createElement("button")
+            deletebtn.textContent="Delete task"
+            deletebtn.onclick=()=>{
+                li.remove()
+            }
+            li.appendChild(deletebtn)
+            ul.appendChild(li)
+        }
+    </script>
+</body>
+</html>
